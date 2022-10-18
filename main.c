@@ -6,13 +6,12 @@
 int main(int argc, char *argv[]) {
 	
 	int i;
-	
-	for(i=0;i<5;i++)
-	{
-		int temp=1;
-		printf("temp=%d\n",temp);
-		temp++;
-	}
-	
-	return 0;
+	printf("함수 호출 전 i=%d\n",i);
+	inc(i);
+	printf("함수 호출 후 i=%d\n",i);
+}
+int inc(int counter)
+{
+	counter++;
+	return counter;
 }
